@@ -29,10 +29,10 @@ mkdir crdroid
 cd crdroid
 
 # init repo
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth 1
+repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs --depth 1
 
 # clone manifest
-git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b main .repo/local_manifests
+git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b los14 .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
