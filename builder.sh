@@ -36,3 +36,10 @@ git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b main .r
 
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
+
+cd crdroid2
+
+wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh
+
+chmod +x create-signed-env.sh
+
