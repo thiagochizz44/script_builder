@@ -29,17 +29,12 @@ mkdir crdroid2
 cd crdroid2
 
 # init repo
-repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs --depth 1
+repo init -u https://github.com/crDroid-Revived/android.git -b 11.0 --git-lfs --depth 1
 
 # clone manifest
-git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b los14 .repo/local_manifests
+git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b test11 .repo/local_manifests
 
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
 
 cd crdroid2
-
-wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh
-
-chmod +x create-signed-env.sh
-
