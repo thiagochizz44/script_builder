@@ -23,13 +23,13 @@ git config --global user.name Thiago
 git config --global user.email thigo6617@gmail.com
 
 # make dir
-mkdir crdroid2
+mkdir evox
 
 # cd
-cd crdroid2
+cd evox
 
 # init repo
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth=1
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs --depth=1
 
 # clone manifest
 git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b main .repo/local_manifests
@@ -37,4 +37,3 @@ git clone https://github.com/thiagochizz44/local_manifests_odessa.git -b main .r
 # sync
 repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j8
 
-cd crdroid2
